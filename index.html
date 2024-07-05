@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="./js/main.js" type="module" defer></script>
+  <title>Matrix Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <h2 class="app-name">Matrix Calculator</h2>
+      <div id="matrixA" class="matrix">
+				<div class="header">
+					<h3>Matrix A</h3>
+					<div class="controls">
+						<div class="cols">
+							<button class="minus">-</button>
+							<p>3</p>
+							<button class="plus">+</button>
+						</div>
+						<div class="rows">
+							<button class="minus">-</button>
+							<p>3</p>
+							<button class="plus">+</button>
+						</div>
+					</div>
+				</div>
+				<div class="elements">
+				</div>
+			</div>
+      <div class="operation">
+        <button id="add" class="op-btn selected">+</button>
+        <button id="substract" class="op-btn">-</button>
+        <button id="multiply" class="op-btn">x</button>
+        <button id="devide" class="op-btn">/</button>
+        <button id="swap"><?xml version="1.0" encoding="utf-8"?>
+          <!-- License: PD. Made by Dariush Habibpour: https://redl.ink/dariush/links -->
+          <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_429_11110)">
+          <path d="M11 8L7 4M7 4L3 8M7 4L7 20" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 16L17 20M17 20L21 16M17 20L17 4" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_429_11110">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg></button>
+      </div>
+      <div id="matrixB" class="matrix">
+        <div class="header">
+          <h3>Matrix B</h3>
+          <div class="controls">
+            <div class="cols">
+              <button class="minus">-</button>
+              <p>5</p>
+              <button class="plus">+</button>
+            </div>
+            <div class="rows">
+              <button class="minus">-</button>
+              <p>6</p>
+              <button class="plus">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="elements">
+        </div>
+      </div>
+    </div>
+    <div class="shuffle-solve">
+      <button class="shuffle">Shuffle</button>
+      <button class="solve">Solve</button>
+    </div>
+    <div id="solution" class="show">
+      <h3>Solution:</h3>
+      <div class="wrapper">
+        <div class="sol-matrix"></div>
+      </div>
+    </div>
+  </div>
+  <dialog id="error-modal">
+    <h2>Invalid Dimensions</h2>
+    <p>Invalid Dimensions</p>
+    <div class="buttons">
+			<button id="cancel" class="btn secondary">Cancel</button>
+			<button id="option-a" class="btn">A</button>
+			<button id="option-b" class="btn">B</button>
+    </div>
+  </dialog>
+</body>
+
+</html>
